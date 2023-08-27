@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="shortcut icon" href="/src/images/favicon.svg" type="image/x-icon" />
+   <!-- TailwindCSS -->
+   <link rel="stylesheet" href="/dist/output.css" />
+   <!-- Boxicons -->
+   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <!-- Aos CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <title>Wakhid Pangestu | 12 TKJ 1</title>
+</head>
+
+<body>
+   <!-- START : NAVBAR -->
+   <nav>
+      <div class="container flex items-center justify-between">
+         <a href="./">
+            <img src="/src/images/logo.svg" alt="" />
+         </a>
+         <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />
+         <label class="peer-checked:hamburger block cursor-pointer p-2 md:hidden" for="hamburger">
+            <div class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
+            <div class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
+         </label>
+         <div
+            class="absolute inset-x-0 top-20 flex -translate-x-full flex-col items-center gap-8 bg-slate-800 py-8 opacity-0 transition duration-300 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row md:bg-transparent md:py-0 md:opacity-100">
+            <a href="#about"
+               class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">ABOUT</a>
+            <a href="#skills" class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">WHAT
+               I DO</a>
+            <a href="#portfolio"
+               class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">WORK</a>
+            <a href="#contact"
+               class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">CONTACT</a>
+         </div>
+      </div>
+   </nav>
+   <!-- END : NAVBAR -->
+
+   <!-- START : HERO -->
+   <div class="bg-hero-img">
+      <div class="flex items-center justify-center flex-col h-screen">
+         <h1 class="text-white font-bold text-4xl md:text-6xl"  data-aos="zoom-in">I'm Wakhid Pangestu</h1>
+         <h2 class="text-white text-sm sm:text-lg md:text-xl font-bold mt-4"  data-aos="zoom-in" data-aos-delay="200">
+            Front-End Developer - UI/UX Designer
+         </h2>
+         <div class="flex items-center justify-center gap-8 mt-8"  data-aos="zoom-in"  data-aos-delay="400">
+            <a href="#"
+               class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full">
+               <i class="bx bxl-instagram text-3xl"></i>
+            </a>
+            <a href="#"
+               class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full">
+               <i class="bx bxl-github text-3xl"></i>
+            </a>
+            <a href="#"
+               class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full">
+               <i class="bx bxl-linkedin text-3xl"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+   <!-- END : HERO -->
+
+   <!-- START : ABOUT -->
+   <section class="container" id="about">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+         <img src="/src/images/about-image.png" alt="" data-aos="fade-up" data-aos-delay="400" />
+         <div data-aos="fade-down" data-aos-delay="600">
+            <h3 class="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
+            <h4 class="text-white font-bold text-3xl mt-2">I'm Wakhid Pangestu</h4>
+            <p class="text-lg text-slate-500 mt-8">
+               I have a background in information technology, with a focus on 
+               frontend development and UI design. I am the type of person who
+               take every opportunity to learn something new.
+            </p>
+            <p class="text-lg text-slate-500 mt-2">
+               That's why I enjoy challenges. From there, I was under pressure
+               to learn quickly and gain a lot of new new.
+            </p>
+         </div>
+      </div>
+   </section>
+   <!-- END : ABOUT -->
+
+   <!-- START : SKILL -->
+   <section class="container" id="skills">
+      <h3 class="font-bold text-blue-600 text-2xl text-center" data-aos="fade-up">WHAT I DO</h3>
+      <h4 class="text-white font-bold text-3xl mt-2 text-center" data-aos="fade-up">SPECIALIZING IN</h4>
+      <div class="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-7 mt-8">
+         <!-- Card Skill 1 -->
+         <div class="flex flex-col gap-8 bg-slate-800/80 rounded-xl px-6 py-5" data-aos="zoom-in" data-aos-delay="400">
+            <div class="flex gap-4">
+               <img class="p-3 rounded-md bg-slate-700" src="/src/images/skill-fe.svg" alt="">
+               <h5 class="text-2xl font-semibold text-white">Front-End <br>Developer</h5>
+            </div>
+            <p class="text-lg text-slate-400">
+               I've mastered programming languages and frameworks including React JS, Next JS, Tailwind CSS, and Bootstrap.
+            </p>
+         </div>
+
+         <!-- Card Skill 2 -->
+         <div class="flex flex-col gap-8 bg-slate-800/80 rounded-xl px-6 py-5" data-aos="zoom-in"  data-aos-delay="600">
+            <div class="flex gap-4">
+               <img class="p-3 rounded-md bg-slate-700" src="/src/images/skill-ui.svg" alt="">
+               <h5 class="text-2xl font-semibold text-white">UI/UX<br>Designer</h5>
+            </div>
+            <p class="text-lg text-slate-400">
+               For UI/UX design, I typically start with Figma for creating websites collaboratively and creatively.
+            </p>
+         </div>
+      </div>
+
+   </section>
+   <!-- START : SKILL -->
+
+   <!-- START : PORTFOLIO -->
+   <section class="container" id="portfolio">
+      <h3 class="font-bold text-blue-600 text-2xl text-center" data-aos="fade-up">PORTFOLIO</h3>
+      <h4 class="text-white font-bold text-3xl mt-2 text-center" data-aos="fade-up">LATEST PROJECTS</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+
+         <!-- Card Portfolio 1 -->
+         <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
+            <img src="/src/images/project1.png" alt="">
+            <div class="px-5 py-4">
+               <h4 class="text-2xl font-medium text-white">Linktree Clone</h4>
+               <a href="" class="inline-flex mt-4 px-4 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">View Demo</a>
+            </div>
+         </div>
+
+         <!-- Card Portfolio 2 -->
+         <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-delay="600">
+            <img src="/src/images/project2.png" alt="">
+            <div class="px-5 py-4">
+               <h4 class="text-2xl font-medium text-white">Portfolio Typescript</h4>
+               <a href="" class="inline-flex mt-4 px-4 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">View Demo</a>
+            </div>
+         </div>
+
+         <!-- Card Portfolio 3 -->
+         <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-delay="800">
+            <img src="/src/images/project3.png" alt="">
+            <div class="px-5 py-4">
+               <h4 class="text-2xl font-medium text-white">Shoemarket Web Design</h4>
+               <a href="" class="inline-flex mt-4 px-4 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">View Demo</a>
+            </div>
+         </div>
+      </div>
+      
+   </section>
+   <!-- END : PORTFOLIO -->
+
+   <!-- START : CONTACT -->
+   <section class="container" id="contact">
+      <div class="max-w-5xl mx-auto bg-slate-800/80 rounded-xl"  data-aos="zoom-in">
+         <div class="text-center py-16" data-aos="zoom-out" data-aos-delay="400">
+            <h3 class="text-2xl md:text-3xl font-bold text-white">Have any project in mind ?</h3>
+            <button class="mt-4 px-4 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 hover:bg-blue-600 active:scale-95 transition-all duration-300">Contact me</button>
+         </div>
+      </div>
+   </section>
+   <!-- END : CONTACT -->
+
+   <!-- START : FOOTER -->
+   <footer class="bg-slate-800/80">
+      <div class="container py-6">
+         <img class="mx-auto" src="/src/images/logo.svg" alt="">
+         <p class="text-lg font-medium text-white text-center mt-2">Copyright 2023 | HIDDEV.ID.</p>
+      </div>
+   </footer>
+   <!-- END : FOOTER -->
+
+   <!-- Script Js -->
+   <script src="/src/js/main.js"></script>
+   <!-- Aos JS -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init(
+         {
+            duration: 400,
+            ofset: 500
+         }
+      );
+    </script>
+</body>
+
+</html>
